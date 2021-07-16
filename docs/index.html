@@ -13,17 +13,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- 스타일링크 -->
   <link rel="stylesheet" href="common.css">
-  <!-- 스타일링크 -->
+  <!-- 자바링크 -->
   <link rel="stylesheet" href="common.js">
+  <!-- 슬라이드 연결 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- 스와이퍼 연결 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <title>지선,민정 작업장</title>
 </head>
 
 <body>
   <!-- 탑바 -->
-  <header class="top-bar hidden md:block h-16 fixed inset-0 bottom-auto">
-    <div class="container mx-auto h-full flex">
+  <header class="fixed inset-0 bottom-auto hidden h-16 top-bar md:block">
+    <div class="container flex h-full mx-auto">
       <!--  로고 공간  -->
-      <a href="#" class="top-bar__logo flex items-center text-2xl ml-3">
+      <a href="#" class="flex items-center ml-3 text-2xl top-bar__logo">
         <span>
           <i class="fab fa-sketch"></i>
         </span>
@@ -40,7 +45,7 @@
         <nav class="top-bar__menu-box-1">
           <ul class="flex h-full">
             <li>
-              <a href="#" class="h-full flex items-center px-4">
+              <a href="#" class="flex items-center h-full px-4">
                 <span>
                   <i class="fas fa-home"></i>
                 </span>
@@ -50,7 +55,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="h-full flex items-center px-4">
+              <a href="#" class="flex items-center h-full px-4">
                 <span>
                   <i class="far fa-address-card"></i>
                 </span>
@@ -60,7 +65,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="h-full flex items-center px-4">
+              <a href="#" class="flex items-center h-full px-4">
                 <span>
                   <i class="far fa-comments"></i>
                 </span>
@@ -70,7 +75,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="h-full flex items-center px-4">
+              <a href="#" class="flex items-center h-full px-4">
                 <span>
                   <i class="far fa-bookmark"></i>
                 </span>
@@ -85,38 +90,25 @@
     </div>
   </header>
 
+  <!-- 슬라이드 -->
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
 
-  <style>
-    /* KoHo 폰트 불러오기 */
-    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
-
-    /* MyLotteLight 폰트 불러오기 */
-    @font-face {
-      font-family: 'MyLotteLight';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteLight.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'MyLotteMedium';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteMedium.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'MyLotteBold';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteBold.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    html {
-      font-family: 'KoHo', 'MyLotteLight', sans-serif;
-    }
-  </style>
 </body>
 
 </html>
