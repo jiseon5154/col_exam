@@ -1,0 +1,23 @@
+body {
+  min-height:100vh;
+  background-color:#faf6eb;
+  color:#3a3a3a;
+}
+
+/* 탑바 */
+.top-bar {
+  background-color:#3f4539;
+  color:#aca99a;
+}
+
+/* 탑바 메뉴 */
+.top-bar__menu-box-1 > ul {
+  background-color:#aca99a;
+  color:#3a3a3a;
+}
+
+/* 호버된 탑바 메뉴 */
+.top-bar__menu-box-1 > ul > li:hover > a {
+  background-color:#faf6eb;
+  color:#3a3a3a;
+}
